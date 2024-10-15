@@ -298,3 +298,6 @@ Response:
   - Staff
 - Expanded user information: full name, favorite café
 - Unit and Integration Tests
+
+-Planning to move data to SQL database
+-Google Maps API
