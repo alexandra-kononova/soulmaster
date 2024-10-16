@@ -222,8 +222,6 @@ Response:
 
 - Deploy client and server projects so all commits will be reflected in production
 
-- As a user, I want to receive an update that my contact details were sucessfully sent to a selected master
-
 - Feature: Home page
 
 - Feature: List spiritual adventures
@@ -266,8 +264,10 @@ Response:
 - Sort list of masters based on the country/location
 - SQL database
 - Proper error screens/handling
+- Navigation bar
 - Unit and Integration Tests
 - Form for users/masters to suggest a new adventure to be added to the platform
+- Adventure selection based on the input from the user (preferences, location etc.)
 - Master's availability calendar & booking system
 - Payment done via platform using 3rd party vendors
 - Faculitator Trainings catalog
