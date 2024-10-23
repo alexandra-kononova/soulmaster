@@ -1,0 +1,23 @@
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    &__copyright {
+        padding-left: 1rem;
+        font-size: 0.7rem;
+    }
+}
+
+.instagram {
+    &__icon {
+    width: auto;
+    height: auto;
+    max-width: 2rem;
+    max-height: 2rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    } 
+}
+
