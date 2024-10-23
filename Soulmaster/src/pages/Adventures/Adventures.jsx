@@ -24,10 +24,10 @@ export default function Adventures() {
   return (
     <>
       <section className="adventure__container">
-        <div class="adventure__image adventure__img">
+        <div class="adventure__background adventure__background-img">
           <img
             src={adventureImage}
-            className="adventure__img"
+            className="adventure__background-img"
             alt
             text="Vivid abstract painting of a winding road through vibrant mountains under a colorful sky."
           />
