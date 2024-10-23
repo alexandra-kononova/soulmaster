@@ -4,7 +4,7 @@ import homeImage from "../../assets/images/Home.jpeg";
 
 export default function Home() {
   return (
-    <>
+    <section className="home__page">
       <section className="home__container">
         <div class="home__image home__img">
           <img
@@ -26,11 +26,11 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <div>
+      <div className="home__bottom-text">
         <h4 className="home__text">
           It's not the destination, but the journey that matters.
         </h4>
       </div>
-    </>
+    </section>
   );
 }

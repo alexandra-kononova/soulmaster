@@ -2,7 +2,7 @@ import "./App.scss";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
-// import Adventures from "./pages/Adventures/Adventures";
+import Adventures from "./pages/Adventures/Adventures";
 // import AdventureDetails from "./pages/AdventureDetails/AdventureDetails";
 // import Masters from "./pages/Masters/Masters";
 // import MasterDetails from "./pages/MasterDetails/MasterDetails";
@@ -16,8 +16,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/adventures" element={<Adventures />} />
-        <Route path="/adventures/:adventureId" element={<AdventureDetails />} />
+        <Route path="/adventures" element={<Adventures />} />
+        {/* <Route path="/adventures/:adventureId" element={<AdventureDetails />} />
         <Route path="/masters" element={<Masters />} />
         <Route path="/masters/:masterId" element={<MasterDetails />} />
         <Route path="/contact" element={<ContactMaster />} />
