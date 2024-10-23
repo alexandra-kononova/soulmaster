@@ -1,7 +1,4 @@
 .adventure {
-    &__item {
-    position: relative;
-    }
     &__img {
     width: 100%;
     height: auto; 
@@ -19,12 +16,16 @@
     &__text-overlay {
     color: white;
     position: absolute;
-    bottom: 7rem;
+    bottom: 3rem;
     }
     &__name {
     margin-left: 1rem;
     }
     &__line {
     text-wrap: wrap;
+    padding-left: 1rem;
+    }
+    &__selection {
+    position: relative;
     }
 }
