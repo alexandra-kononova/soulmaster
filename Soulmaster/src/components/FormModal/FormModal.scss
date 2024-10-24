@@ -1,0 +1,72 @@
+.confirm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    top: 11.625rem;
+    padding: 2.5rem 4rem;
+    margin: 0 auto;
+    width: 42rem;
+    height: 32rem;
+    border-radius: 0.1875rem;
+    background-color: white;
+  
+    &__overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  
+    &__close-button {
+      position: relative;
+      bottom: 1rem;
+      left: 2em;
+      padding: 0;
+      border: none;
+      font: inherit;
+      color: inherit;
+      background-color: transparent;
+      cursor: pointer;
+      display: block;
+      margin-left: auto;
+      min-height: 1.5rem;
+      min-width: 1.5rem;
+      background-image: url("./close-24px.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  
+    &__description {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+  
+      font-size: 1.125rem;
+      font-weight: 500;
+      color: #333333;
+      margin-bottom: 1.5rem;
+    }
+  
+    &__initiative-logo {
+      width: 5rem;
+      height: 5rem;
+      background-image: url("./better-world.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  
+    &__button {
+      width: fit-content;
+    }
+  }
+  

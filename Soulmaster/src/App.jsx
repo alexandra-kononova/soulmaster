@@ -6,9 +6,10 @@ import Adventures from "./pages/Adventures/Adventures";
 // import AdventureDetails from "./pages/AdventureDetails/AdventureDetails";
 import Masters from "./pages/Masters/Masters";
 // import MasterDetails from "./pages/MasterDetails/MasterDetails";
-// import ContactMaster from "./pages/ContactMaster/ContactMaster";
+import ContactMaster from "./pages/ContactMaster/ContactMaster";
 // import NotFound from "./pages/NotFound/NotFound";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import FormModal from "./components/FormModal/FormModal";
 
 function App() {
   return (
@@ -18,9 +19,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/adventures" element={<Adventures />} />
         <Route path="/masters" element={<Masters />} />
+        <Route path="/contact" element={<ContactMaster />} />
+        <Route path="/contact/modal" element={<FormModal />} />
         {/* <Route path="/adventures/:adventureId" element={<AdventureDetails />} />
         <Route path="/masters/:masterId" element={<MasterDetails />} />
-        <Route path="/contact" element={<ContactMaster />} />
         <Route path="/not-found" element={<NotFound />} />
         <Route path="/*" element={<Navigate to="/not-found" />} /> */}
       </Routes>

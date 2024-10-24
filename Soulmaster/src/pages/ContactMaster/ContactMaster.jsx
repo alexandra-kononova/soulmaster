@@ -1,61 +1,67 @@
+import "../ContactMaster/ContactMaster.scss";
+import FormModal from "../../components/FormModal/FormModal";
+import { useState } from "react";
+
 export default function Form() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    openModal();
+  };
+
   return (
     <>
-      <div className="">
-        <h1>Book a session</h1>
-        <h3>
+      <div className="contact__header">
+        <h1 className="contact__title">Book a session</h1>
+        <h3 className="contact__subtitle">
           Please leave your details below and a master will be in touch with
           you.
         </h3>
       </div>
-      <form>
-        <label className="">
+      <form className="contact__form" onSubmit={handleSubmit}>
+        <label className="contact__field">
           Name
           <input
-            classname="upload__input"
+            className="contact__input"
             type="text"
-            placeholder="Add a title to your video"
-            value={title}
-            onChange={handleChangeTitle}
+            placeholder="Anna"
             required
           />
         </label>
-        <label className="">
+        <label className="contact__field">
           Email
           <input
-            classname="upload__input"
-            type="text"
-            placeholder="Add a title to your video"
-            value={title}
-            onChange={handleChangeTitle}
+            className="contact__input"
+            type="email"
+            placeholder="example@site.com"
             required
           />
         </label>
-        <label className="">
+        <label className="contact__field">
           Phone
           <input
-            classname="upload__input"
-            type="text"
-            placeholder="Add a title to your video"
-            value={title}
-            onChange={handleChangeTitle}
+            className="contact__input"
+            type="tel"
+            placeholder="+ 1 123 456 7890"
             required
           />
         </label>
         <div className="button__container">
-          <button
-            onClick={handleUpload}
-            className="button publish__button"
-            type="submit"
-          >
-            <img className="publish__icon" src={publish} alt="publish icon" />
-            publish
+          <button className="form__button" type="submit">
+            Submit
           </button>
-          <Link to="/" className="cancel__link">
-            <div className="cancel">cancel</div>
-          </Link>
         </div>
       </form>
+      {isOpen && <FormModal isOpen={isOpen} closeModal={closeModal} />}
     </>
   );
 }
