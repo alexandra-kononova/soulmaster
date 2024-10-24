@@ -1,0 +1,25 @@
+.master {
+    &__selection {
+    color: black;
+    }
+    &__list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    }
+    &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 13rem;
+    margin-bottom: 2rem;
+    }
+    &__subtext {
+    height: 25rem;
+    }
+    &__description {
+    text-align: center;
+    }
+}

@@ -1,0 +1,21 @@
+.masters__container {
+    background-color: #939d84;
+}
+
+.master {
+    &__title {
+    margin: 0;
+    font-size: 3rem;
+    }
+    &__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    gap: 1rem;
+    }
+    &__subtitle {
+    font-weight: 400;
+    }
+}
