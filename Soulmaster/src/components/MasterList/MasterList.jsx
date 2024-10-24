@@ -25,7 +25,11 @@ export default function MasterList({ masters }) {
                 <p>
                   {master.price} {master.currency} {master.type}
                 </p>
-                <button>Book a session with me</button>
+                <Link to="{`/masters/${master.id}`}">
+                  <button className="booking__button">
+                    Book a session with me
+                  </button>
+                </Link>
               </div>
             </div>
           </Link>
