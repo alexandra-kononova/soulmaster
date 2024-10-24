@@ -13,7 +13,7 @@ export default function Adventures() {
     const getAdventures = async () => {
       try {
         const { data } = await axios.get(`${API_URL}/adventures`);
-        setAdventures(data[0].adventures);
+        setAdventures(data);
       } catch (error) {
         console.log("Error loading adventures", error);
       }

@@ -3,7 +3,6 @@ import axios from "axios";
 import MasterList from "../../components/MasterList/MasterList";
 import "../Masters/Masters.scss";
 import { API_URL } from "../../utils/api";
-// import adventureImage from "../../assets/images/Adventures.jpg";
 
 export default function Masters() {
   const [masters, setMasters] = useState([]);

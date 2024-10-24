@@ -26,11 +26,11 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <div className="home__bottom-text">
+      {/* <div className="home__bottom-text">
         <h4 className="home__text">
           It's not the destination, but the journey that matters.
         </h4>
-      </div>
+      </div> */}
     </section>
   );
 }
